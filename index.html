@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>DOM</h1>
+<p> Dom represent for document object modal it is programming interface dom is the way of represent webpage structured and hierirachal way so that it will become easier for programmers and users to glide through the document.dom is very easy to access is class tagname for manupulating</p>
+<p>dom used for html for structure but javascript use dom for adding behaviour for webpage</p>
+<p>when html file loaded into the browser the javascript can not understand html file directly so corressponding dom is created </p>
+<p>DOM is basically the representation of the same HTML document but in a different format with the use of objects</p>
+
+
+<h3>innerText</h3>
+<p>innerText will return all text contain by the element and its child elemnt</p>
+<h3>innerHtml</h3>
+<p> it will return all text and and including all tags that is contained by element</p>
+<h3>access element by tag class id</h3>
+<h4>by tag</h4>
+<pre>
+    <h4>HELLO EVERYONE WHAT ARE DOING</h4>
+     const result=document.getElementsByTagName('h1')
+     console.log(result[0].innerText);
+</pre>
+<h3>by class</h3>
+<pre>
+    <h4 class="abc">HELLO EVERYONE WHAT ARE DOING</h4>
+    const result=document.getElementsByClassName('abc')
+    console.log(result.innerText);
+</pre>   
+<h3>by id</h3>
+<pre>
+    <h4 id="ab">HELLO EVERYONE WHAT ARE DOING</h4>
+    const result=document.getElementsById('ab')
+    console.log(result.innerText);  
+</pre>
+
+<h3> changing innerText</h3>
+<h1></h1>
+
+<pre>
+     <button onclick="clickme()">click here</button>
+    function clickme(){
+        const result=document.getElementsByTagName('h1')
+        result[4].innerText='ELEVATION ACADEMY'
+    }
+</pre>
+
+<h3>ADD STYLE</h3>
+<pre>
+    <h1></h1>
+    <button onClick="clickme()">click here</button>
+    function clickme (){
+        const result=document .getElementTagName('h1')
+        result.style.color='red'
+        result.innerText='ELEVETION ACADEMY'
+    }
+</pre>
+
+<h3>inner html</h3>
+<div id="as">
+    <span>hello</span>
+    <p>welcome</p>
+</div>
+<pre>
+    function abc(){
+        const result=document.getElementById('as')
+        alert(result.innerHTML)
+    }abc()
+</pre>
+    
+
+
+<h3>create element</h3>
+<pre>
+    const result=document.createElement('h1')
+result.setAttribute("class","ipl")
+result.innerText='hello lucknow'
+console.log(result);
+</pre>
+    <script src="main.js"></script>
+</body>
+</html>
